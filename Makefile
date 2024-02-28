@@ -1,7 +1,7 @@
 NAME = libftprintf.a
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
-SRC_FILES = ft_printf.c utils.c
+SRC_FILES = ft_printf.c utils.c main.c
 OBJ_FILES = $(SRC_FILES:.c=.o)
 
 all: $(NAME)
@@ -9,7 +9,7 @@ all: $(NAME)
 $(NAME): $(OBJ_FILES)
 	ar rcs $(NAME) $(OBJ_FILES)
 
-%.o: %.c
+%.o: %.c Makefile ft_printf.h
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
