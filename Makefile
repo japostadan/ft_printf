@@ -1,7 +1,7 @@
 NAME = libftprintf.a
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
-SRC_FILES = ft_printf.c utils.c main.c
+SRC_FILES = ft_printf.c ft_printf_char.c ft_printf_string.c ft_printf_int.c ft_printf_pointer.c ft_printf_uint.c ft_printf_hexa.c ft_printf_percent.c utils.c main.c
 OBJ_FILES = $(SRC_FILES:.c=.o)
 
 all: $(NAME)
@@ -21,4 +21,3 @@ fclean: clean
 re: fclean all
 
 .PHONY: all clean fclean re
-

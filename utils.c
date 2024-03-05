@@ -6,7 +6,7 @@
 /*   By: jpostada <jpostada@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/16 21:31:08 by jpostada          #+#    #+#             */
-/*   Updated: 2024/02/28 12:11:23 by jpostada         ###   ########.fr       */
+/*   Updated: 2024/03/05 15:35:56 by jpostada         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,106 +14,12 @@
 #include <stdlib.h>  // Include for malloc, free, abs
 #include <unistd.h>  // Include for write
 
-int	ft_printf_int(char const format, va_list ap, int *len)
+static int	ft_toupper(int c)
 {
-	int		i;
-	char	*to_write;
-
-	i = va_arg(ap, int);
-	to_write = ft_itoa(i);
-	if (!to_write)
-	{
-		(*len) = -1;
-		return (*len);
-	}
-	ft_printf_putnbr(format, to_write, len);
-	free(to_write);
-	return (*len);
-}
-
-int	ft_printf_pointer(char const format, va_list ap, int *len)
-{
-	unsigned long long	p;
-	char				*to_write;
-
-	p = va_arg(ap, unsigned long long);
-	to_write = ft_utoa_base(p, ft_baselen(format));
-	if (!to_write)
-	{
-		(*len) = -1;
-		return (*len);
-	}
-	ft_printf_putnbr(format, to_write, len);
-	free(to_write);
-	return (*len);
-}
-
-int	ft_printf_string(va_list ap, int *len)
-{
-	char	*s;
-
-	s = va_arg(ap, char *);
-	if (!s)
-	{
-		if (write(1, "(null)", 6) == -1)
-		{
-			(*len) = -1;
-			return (*len);
-		}
-		(*len) += 6;
-		return (*len);
-	}
-	while (*s)
-	{
-		if (write(1, s, 1) == -1)
-		{
-			(*len) = -1;
-			return (*len);
-		}
-		(*len)++;
-		s++;
-	}
-	return (*len);
-}
-int	ft_printf_uint(char const format, va_list ap, int *len)
-{
-	unsigned int	u;
-	char			*to_write;
-
-	u = va_arg(ap, unsigned int);
-	to_write = ft_utoa_base(u, ft_baselen(format));
-	if (!to_write)
-	{
-		(*len) = -1;
-		return (*len);
-	}
-	ft_printf_putnbr(format, to_write, len);
-	free(to_write);
-	return (*len);
-}
-
-int	ft_printf_percent(char const format, int *len)
-{
-	if (write(1, &format, 1) == -1)
-		(*len) = -1;
+	if (c >= 'a' && c <= 'z')
+		return (c - 32);
 	else
-		(*len)++;
-	return (*len);
-}
-int	ft_printf_char(va_list ap, int *len)
-{
-	char	c;
-
-	c = va_arg(ap, int);
-	if (write(1, &c, 1) == -1)
-		(*len) = -1;
-	else
-		(*len)++;
-	return (*len);
-}
-int	ft_printf_hexa(char const format, va_list ap, int *len)
-{
-	return (ft_printf_uint(format, ap, len));
+		return (c);
 }
 void	ft_str_toupper(char *str)
 {
@@ -252,10 +158,4 @@ char	*ft_itoa(int n)
 	}
 	return (num);
 }
-int	ft_toupper(int c)
-{
-	if (c >= 'a' && c <= 'z')
-		return (c - 32);
-	else
-		return (c);
-}
+
