@@ -1,7 +1,7 @@
 
 #include <stdio.h>
 #include <limits.h>
-
+#include	"ft_printf.h"
 int	main(void)
 {
 	int				len1;
@@ -68,18 +68,18 @@ int	main(void)
 	ft_printf("return    printf = %d\n", len2);
 
 	printf("\nTEST 10\n");
-	i1 = -84365.76;
+	i1 = -84365;
 	len1 = ft_printf("decimal ft_printf = \"%d\"\n", i1);
 	len2 = printf("decimal    printf = \"%d\"\n", i1);
-	ft_printf("return ft_printf = %d\n", len1);
-	ft_printf("return    printf = %d\n", len2);
+	printf("return ft_printf = %d\n", len1);
+	printf("return    printf = %d\n", len2);
 
 	printf("\nTEST 11\n");
 	i1 = -5464;
 	len1 = ft_printf("Int ft_printf = \"%i\"\n", i1);
-	len2 = printf("Int entero    printf = \"%i\"\n", i1);
-	ft_printf("return ft_printf = %d\n", len1);
-	ft_printf("return    printf = %d\n", len2);
+	len2 = printf("Int printf = \"%i\"\n", i1);
+	printf("return ft_printf = %d\n", len1);
+	printf("return    printf = %d\n", len2);
 
 	printf("\nTEST 12\n");
 	u1 = 3147483647;

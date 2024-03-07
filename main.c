@@ -2,18 +2,25 @@
 #include <stdio.h>
 int main()
 {
-    	char c = 'A';
-    	char *str = "Hello, World!";
-    	void *ptr = (void *)0x12345678;
-    	int num = -2147483648;
-    	unsigned int u_num = -2147483648;
-	unsigned int hex_num = 0xA1B2C3;
-	unsigned int hex_upper_num = 0xD4E5F6;
+    char c = 'A';
+    char *str = "Hello, World!";
+    void *ptr = (void *)-1;
+    int num = -2147483648;
+    unsigned int u_num = -214748;
+	unsigned int hex_num = -10;
+	unsigned int hex_upper_num = -10;
 	int i = 0;
 	int j = 0;
-    i = ft_printf("FAKE ->> 1: c: %c s: %s p: %p d: %d  u: %u \n ",c,str,ptr,num,u_num);
+	printf("(%p)\n", (void*)NULL);
+	ft_printf("(%p)\n", (void*)NULL);
+	int returns = 0;
+	returns = ft_printf(NULL);
+	ft_printf("printf returns: %d\n", returns);
+    returns = ft_printf(NULL);
+    ft_printf("ft_printf returns: %d\n", returns);
+    i = ft_printf("REAL ->> 1: c: %c s: %s p: %p d: %d  u: %u \n ",'z',NULL,NULL,4+1,6,6);
 	printf("i= %d\n",i);
-    j = printf("REAL ->> 1: c: %c s: %s p: %p d: %d  u: %u \n ",c,str,ptr,num,u_num);
+    j = printf("REAL ->> 1: c: %c s: %s p: %p d: %d  u: %u \n ",'z',NULL,NULL,4+1,6,6);
 	ft_printf("Fake j = %d\n",j);
 	printf("\n\nREAL ->>Test 1: %c\n", c);
 	ft_printf("Fake Test  ->>1: %c\n", c);
