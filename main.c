@@ -11,6 +11,12 @@ int main()
 	unsigned int hex_upper_num = -10;
 	int i = 0;
 	int j = 0;
+	int test = 0;
+        test = printf("Real: hello %% , how are you\n");
+        printf("\nprintf returns: %d\n", test);
+
+		test = ft_printf("Fake: hello %% , how are you\n");
+        ft_printf("\nft_printf returns: %d\n", test);
 	printf("(%p)\n", (void*)NULL);
 	ft_printf("(%p)\n", (void*)NULL);
 	int returns = 0;
