@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jpostada <jpostada@student.42barcel>       +#+  +:+       +#+        */
+/*   By: japostad <japostad@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/16 21:30:44 by jpostada          #+#    #+#             */
-/*   Updated: 2024/03/05 15:51:17 by jpostada         ###   ########.fr       */
+/*   Created: 2025/01/13 19:55:41 by japostad          #+#    #+#             */
+/*   Updated: 2025/01/13 19:56:14 by japostad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
@@ -22,7 +23,6 @@ int					ft_printf_logic(char const *format, va_list ap, int *len);
 int					ft_printf(char const *format, ...);
 
 /* ft_printf_utils.c */
-//void				ft_str_toupper(char *str);
 unsigned int		ft_baselen(char format);
 size_t				ft_ulen_base(unsigned long long n, unsigned int base_len);
 char				*ft_utoa_base(unsigned long long n, unsigned int base_len);

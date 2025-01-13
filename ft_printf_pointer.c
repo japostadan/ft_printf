@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf_pointer.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jpostada <jpostada@student.42barcel>       +#+  +:+       +#+        */
+/*   By: japostad <japostad@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/05 14:19:01 by jpostada          #+#    #+#             */
-/*   Updated: 2024/03/05 14:34:10 by jpostada         ###   ########.fr       */
+/*   Created: 2025/01/13 19:52:46 by japostad          #+#    #+#             */
+/*   Updated: 2025/01/13 19:52:51 by japostad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

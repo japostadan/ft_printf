@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf_int.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jpostada <jpostada@student.42barcel>       +#+  +:+       +#+        */
+/*   By: japostad <japostad@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/05 13:59:57 by jpostada          #+#    #+#             */
-/*   Updated: 2024/03/05 14:06:35 by jpostada         ###   ########.fr       */
+/*   Created: 2025/01/13 19:53:56 by japostad          #+#    #+#             */
+/*   Updated: 2025/01/13 19:54:04 by japostad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

@@ -3,16 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   utils.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jpostada <jpostada@student.42barcel>       +#+  +:+       +#+        */
+/*   By: japostad <japostad@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/16 21:31:08 by jpostada          #+#    #+#             */
-/*   Updated: 2024/03/05 15:35:56 by jpostada         ###   ########.fr       */
+/*   Created: 2025/01/13 19:50:53 by japostad          #+#    #+#             */
+/*   Updated: 2025/01/13 19:51:29 by japostad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include <stdlib.h>  // Include for malloc, free, abs
-#include <unistd.h>  // Include for write
 
 static int	ft_toupper(int c)
 {
