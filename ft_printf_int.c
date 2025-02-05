@@ -6,13 +6,13 @@
 /*   By: japostad <japostad@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/13 19:53:56 by japostad          #+#    #+#             */
-/*   Updated: 2025/01/13 19:54:04 by japostad         ###   ########.fr       */
+/*   Updated: 2025/02/05 19:18:00 by japostad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_printf_int(char const format,va_list ap, int *len)
+int	ft_printf_int(char const format, va_list ap, int *len)
 {
 	int		i;
 	char	*to_write;

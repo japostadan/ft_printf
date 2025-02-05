@@ -3,17 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jpostada <jpostada@student.42barcel>       +#+  +:+       +#+        */
+/*   By: japostad <japostad@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/16 21:34:19 by jpostada          #+#    #+#             */
-/*   Updated: 2024/02/28 12:06:47 by jpostada         ###   ########.fr       */
+/*   Created: 2025/02/05 19:14:14 by japostad          #+#    #+#             */
+/*   Updated: 2025/02/05 19:17:27 by japostad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "ft_printf.h"
 #include <unistd.h>
 #include <stdlib.h>
 
-int	ft_select_format(char const format, va_list ap, int *len)
+int	ft_select_format(char const	format, va_list ap, int *len)
 {
 	if (format == 'c')
 		ft_printf_char(ap, len);

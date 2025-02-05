@@ -7,16 +7,17 @@ OBJ_FILES = $(SRC_FILES:.c=.o)
 all: $(NAME)
 
 $(NAME): $(OBJ_FILES)
-	ar rcs $(NAME) $(OBJ_FILES)
+	@ar rc $(NAME) $(OBJ_FILES)
+	@echo "--ready--"
 
 %.o: %.c Makefile ft_printf.h
-	$(CC) $(CFLAGS) -c $< -o $@
+	@$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJ_FILES)
+	@rm -f $(OBJ_FILES)
 
 fclean: clean
-	rm -f $(NAME)
+	@rm -f $(NAME)
 
 re: fclean all
 
