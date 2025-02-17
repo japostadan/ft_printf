@@ -1,7 +1,7 @@
 
 #include <stdio.h>
 #include <limits.h>
-#include	"ft_printf.h"
+#include	"./includes/ft_printf.h"
 int	main(void)
 {
 	int				len1;

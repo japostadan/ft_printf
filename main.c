@@ -1,4 +1,4 @@
-#include "ft_printf.h"
+#include "./includes/ft_printf.h"
 #include <stdio.h>
 int main()
 {
@@ -16,12 +16,11 @@ int main()
     printf("\nprintf returns: %d\n", test);
 	test = ft_printf("Fake: hello %% , how are you\n");
     ft_printf("\nft_printf returns: %d\n", test);
-	printf("(%p)\n", (void*)NULL);
-	ft_printf("(%p)\n", (void*)NULL);
+	printf("%p\n", (void*)NULL);
+	ft_printf("%p\n", (void*)NULL);
 	int returns = 0;
 	returns = ft_printf(NULL);
 	ft_printf("printf returns: %d\n", returns);
-    returns = printf(NULL);
     ft_printf("ft_printf returns: %d\n", returns);
     i = ft_printf("REAL ->> 1: c: %c s: %s p: %p d: %d  u: %u \n ",'\0',(char *)"",NULL,4+1,6);
 	printf("i= %d\n",i);

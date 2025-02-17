@@ -113,6 +113,7 @@ void	*ft_calloc(size_t count, size_t size)
 	return (output);
 }
 
+/*
 static int	ft_numlen(int n)
 {
 	int	len;
@@ -127,7 +128,6 @@ static int	ft_numlen(int n)
 	}
 	return (len);
 }
-
 char	*ft_itoa(int n)
 {
 	char	*num;
@@ -156,4 +156,4 @@ char	*ft_itoa(int n)
 	}
 	return (num);
 }
-
+*/
