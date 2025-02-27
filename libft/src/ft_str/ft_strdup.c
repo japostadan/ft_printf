@@ -6,7 +6,7 @@
 /*   By: japostad <japostad@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/30 19:05:00 by japostad          #+#    #+#             */
-/*   Updated: 2024/12/30 19:05:02 by japostad         ###   ########.fr       */
+/*   Updated: 2025/02/27 21:32:36 by japostad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@
 
 char	*ft_strdup(const char *string)
 {
-	size_t  i;
-	char    *new_str;
+	size_t	i;
+	char	*new_str;
 
 	i = 0;
 	new_str = (char *)malloc(sizeof(char) * ft_strlen(string) + 1);

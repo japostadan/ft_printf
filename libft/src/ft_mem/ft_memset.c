@@ -6,7 +6,7 @@
 /*   By: japostad <japostad@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/30 19:00:10 by japostad          #+#    #+#             */
-/*   Updated: 2024/12/30 19:00:27 by japostad         ###   ########.fr       */
+/*   Updated: 2025/02/27 21:46:41 by japostad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 void	*ft_memset(void *b, int c, size_t len)
 {
 	unsigned char	*ptr;
-    
+
 	ptr = (unsigned char *)b;
 	while (len--)
 	{

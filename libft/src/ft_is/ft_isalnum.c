@@ -9,8 +9,6 @@
 /*   Updated: 2025/01/13 17:27:16 by japostad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-
 /*
 * ft_isalnum - Checks if a character is alphanumeric
 * c: The character to check

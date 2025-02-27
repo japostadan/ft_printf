@@ -6,7 +6,7 @@
 /*   By: japostad <japostad@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/30 18:35:33 by japostad          #+#    #+#             */
-/*   Updated: 2024/12/30 19:11:52 by japostad         ###   ########.fr       */
+/*   Updated: 2025/02/27 22:05:52 by japostad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,20 +21,20 @@
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	if (!src)
-		return (0);
 	size_t	i;
 	size_t	src_len;
 
 	src_len = ft_strlen(src);
-    if (!dst || size == 0)
-        return (src_len);
-    i = 0;
+	i = 0;
+	if (!src || !dst)
+		return (0);
+	if (!dst || size == 0)
+		return (src_len);
 	while (i < size - 1 && src[i])
 	{
 		dst[i] = src[i];
 		i++;
 	}
-		dst[i] = '\0';
+	dst[i] = '\0';
 	return (src_len);
 }
