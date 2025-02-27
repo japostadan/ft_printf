@@ -12,6 +12,8 @@ int main()
 	int i = 0;
 	int j = 0;
 	int test = 0;
+    ft_printf("% ");
+    printf("% ");
     test = printf("Real: hello %% , how are you\n");
     printf("printf returns: %d\n", test);
 	test = ft_printf("Fake: hello %% , how are you\n");

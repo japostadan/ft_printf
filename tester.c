@@ -39,7 +39,7 @@ int	main(void)
 
 	printf("\nTEST 5\n");
 	len1 = ft_printf("Ptr at 0 ft_printf = \"%p\"\n", (void *)0);
-	len2 = printf("Ptr at 0  printf = \"%p\"\n", (void *)0);
+	len2 =    printf("Ptr at 0    printf = \"%p\"\n", (void *)0);
 	ft_printf("return ft_printf = %d\n", len1);
 	ft_printf("return    printf = %d\n", len2);
 
@@ -106,14 +106,6 @@ int	main(void)
 	len2 = printf("Print     printf = \"%%\"\n");
 	ft_printf("return ft_printf = %d\n", len1);
 	ft_printf("return    printf = %d\n", len2);
-
-	printf("\nTEST 16\n");
-	len1 = ft_printf("error ft_printf = \"%\n\"\n");
-	ft_printf("\n");
-	len2 = printf("error    printf = \"%\n\"\n");
-	ft_printf("return ft_printf = %d\n", len1);
-	ft_printf("return    printf = %d\n", len2);
-
 
 	system("leaks a.out");
 	return (0);
