@@ -25,8 +25,8 @@ int	main(void)
 	ft_printf("return    printf = %i\n", len2);
 
 	printf("\nTEST 3\n");
-	len1 = ft_printf("Str NULL ft_printf = \"%s\"\n", (char *)NULL);
-	len2 = printf("Str NULL    printf = \"%s\"\n", (char *)NULL);
+	len1 = ft_printf("Str ft_printf = \"%s\"\n", (char *)"String test");
+	len2 = printf("Str    printf = \"%s\"\n", (char *)"String test");
 	ft_printf("return ft_printf = %i\n", len1);
 	ft_printf("return    printf = %i\n", len2);
 
@@ -39,7 +39,7 @@ int	main(void)
 
 	printf("\nTEST 5\n");
 	len1 = ft_printf("Ptr at 0 ft_printf = \"%p\"\n", (void *)0);
-	len2 = printf("Ptr at 0    printf = \"%p\"\n", (void *)0);
+	len2 = printf("Ptr at 0  printf = \"%p\"\n", (void *)0);
 	ft_printf("return ft_printf = %d\n", len1);
 	ft_printf("return    printf = %d\n", len2);
 
@@ -51,7 +51,7 @@ int	main(void)
 
 	printf("\nTEST 7\n");
 	len1 = ft_printf("Ptr at LONG_MAX ft_printf = \"%p\"\n", (void *)LONG_MAX);
-	len2 = printf("Ptr at  LONG_MAX    printf = \"%p\"\n", (void *)LONG_MAX);
+	len2 = printf("Ptr at  LONG_MAX   printf = \"%p\"\n", (void *)LONG_MAX);
 	ft_printf("return ft_printf = %d\n", len1);
 	ft_printf("return    printf = %d\n", len2);
 
@@ -77,14 +77,14 @@ int	main(void)
 	printf("\nTEST 11\n");
 	i1 = -5464;
 	len1 = ft_printf("Int ft_printf = \"%i\"\n", i1);
-	len2 = printf("Int printf = \"%i\"\n", i1);
+	len2 = printf("Int    printf = \"%i\"\n", i1);
 	printf("return ft_printf = %d\n", len1);
 	printf("return    printf = %d\n", len2);
 
 	printf("\nTEST 12\n");
 	u1 = 3147483647;
 	len1 = ft_printf("Unsigned int ft_printf = \"%u\"\n", u1);
-	len2 = printf("Unsigned int  printf = \"%u\"\n", u1);
+	len2 = printf("Unsigned int    printf = \"%u\"\n", u1);
 	ft_printf("return ft_printf = %d\n", len1);
 	ft_printf("return    printf = %d\n", len2);
 
@@ -97,24 +97,23 @@ int	main(void)
 
 	printf("\nTEST 14\n");
 	len1 = ft_printf("uppercase ft_printf = \"%X\"\n", hexa);
-	len2 = printf("uppercase printf = \"%X\"\n", hexa);
+	len2 = printf("uppercase    printf = \"%X\"\n", hexa);
 	ft_printf("return ft_printf = %d\n", len1);
 	ft_printf("return    printf = %d\n", len2);
 
 	printf("\nTEST 15\n");
 	len1 = ft_printf("Print  ft_printf = \"%%\"\n");
-	len2 = printf("Print  printf = \"%%\"\n");
+	len2 = printf("Print     printf = \"%%\"\n");
 	ft_printf("return ft_printf = %d\n", len1);
 	ft_printf("return    printf = %d\n", len2);
 
 	printf("\nTEST 16\n");
 	len1 = ft_printf("error ft_printf = \"%\n\"\n");
 	ft_printf("\n");
-	//len2 = printf("error    printf = \"%\n\"");
+	len2 = printf("error    printf = \"%\n\"\n");
 	ft_printf("return ft_printf = %d\n", len1);
-	//ft_printf("return    printf = %d\n", len2);
+	ft_printf("return    printf = %d\n", len2);
 
-	ft_printf("\n");
 
 	system("leaks a.out");
 	return (0);

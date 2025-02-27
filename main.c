@@ -13,11 +13,11 @@ int main()
 	int j = 0;
 	int test = 0;
     test = printf("Real: hello %% , how are you\n");
-    printf("\nprintf returns: %d\n", test);
+    printf("printf returns: %d\n", test);
 	test = ft_printf("Fake: hello %% , how are you\n");
-    ft_printf("\nft_printf returns: %d\n", test);
-	printf("%p\n", (void*)NULL);
-	ft_printf("%p\n", (void*)NULL);
+    ft_printf("ft_printf returns: %d\n", test);
+	printf("Pointer to string ->%p\n", str);
+	ft_printf("Pointer to string ->%p\n", str);
 	int returns = 0;
 	returns = ft_printf(NULL);
 	ft_printf("printf returns: %d\n", returns);
