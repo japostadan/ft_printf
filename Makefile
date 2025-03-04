@@ -48,7 +48,7 @@ $(OBJF):
 			@mkdir -p $(OBJ_DIR)
 
 clean:
-			@$(RM) -rf $(OBJ_DIR)
+			@$(RM) -rf $(OBJ_DIR) *.out
 			@make clean -C $(LIBFT)
 			@echo "$(BLUE)ft_printf object files cleaned!$(DEF_COLOR)"
 
