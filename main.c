@@ -12,8 +12,6 @@ int main()
 	int i = 0;
 	int j = 0;
 	int test = 0;
-    ft_printf("% ");
-    printf("% ");
     test = printf("Real: hello %% , how are you\n");
     printf("printf returns: %d\n", test);
 	test = ft_printf("Fake: hello %% , how are you\n");
@@ -24,7 +22,7 @@ int main()
 	returns = ft_printf(NULL);
 	ft_printf("printf returns: %d\n", returns);
     ft_printf("ft_printf returns: %d\n", returns);
-    i = ft_printf("REAL ->> 1: c: %c s: %s p: %p d: %d  u: %u \n ",'\0',(char *)"",NULL,4+1,6);
+    i = ft_printf("FAKE ->> 1: c: %c s: %s p: %p d: %d  u: %u \n ",'\0',(char *)"",NULL,4+1,6);
 	printf("i= %d\n",i);
     j = printf("REAL ->> 1: c: %c s: %s p: %p d: %d  u: %u \n ",'\0',(char *)"",NULL,4+1,6);
 	ft_printf("Fake j = %d\n",j);
