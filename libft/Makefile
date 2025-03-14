@@ -16,7 +16,7 @@
 
 NAME		= libft.a
 INCLUDES	= ../includes
-SRCS_DIR		= src/
+SRCS_DIR	= src/
 OBJS_DIR	= obj/
 CC 			= gcc
 CFLAGS 		= -Wall -Wextra -Werror -I
@@ -78,7 +78,7 @@ OBJSF		=	.cache_exists
 
 all:		$(NAME)
 
-$(NAME):	$(OBJS)
+$(NAME):	$(OBJS) $(INCLUDES)/libft.h
 			@$(AR) $(NAME) $(OBJS)
 			@echo "$(GREEN)Libft compiled!$(DEF_COLOR)"
 

@@ -33,7 +33,7 @@ OBJF		=	.cache_exists
 
 all:		$(NAME)
 
-$(NAME):	$(OBJ)
+$(NAME):	$(OBJ) $(INCLUDE)/*.h
 			@make -C $(LIBFT)
 			@cp libft/libft.a .
 			@mv libft.a $(NAME)
