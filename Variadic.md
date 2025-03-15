@@ -70,4 +70,8 @@ int main()
     return 0;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> fbae2d2 (Create: Add docs files)
 ```
