@@ -6,7 +6,7 @@
 #    By: japostad <japostad@student.42barcelon      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/30 16:59:24 by japostad          #+#    #+#              #
-#    Updated: 2025/01/11 16:44:24 by japostad         ###   ########.fr        #
+#    Updated: 2025/03/18 12:33:13 by japostad         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ NAME		= libft.a
 INCLUDES	= ../includes
 SRCS_DIR	= src/
 OBJS_DIR	= obj/
-CC 			= gcc
+CC 			= cc
 CFLAGS 		= -Wall -Wextra -Werror -I
 RM			= rm -f
 AR			=ar rcs
