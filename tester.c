@@ -12,6 +12,7 @@ int	main(void)
 	char			s[] = "printf test";
 	char			*p;
 
+
 	printf("\nTEST 1\n");
 	len1 = ft_printf("Char \'a\' ft_printf = %c\n", 'a');
 	len2 = printf("Char \'a\'    printf = %c\n", 'a');

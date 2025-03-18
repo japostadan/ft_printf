@@ -6,7 +6,7 @@
 #    By: japostad <japostad@student.42barcelon      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/30 16:59:24 by japostad          #+#    #+#              #
-#    Updated: 2025/03/18 12:33:13 by japostad         ###   ########.fr        #
+#    Updated: 2025/03/18 13:32:45 by japostad         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,7 +39,7 @@ CYAN        = \033[0;96m
 #########
 
 FTIS_DIR	=	ft_is/
-FTIS		=	ft_isalnum ft_isalpha ft_isascii ft_isdigit ft_isprint
+FTIS		=	ft_isalnum ft_isalpha ft_isascii ft_isdigit ft_isprint ft_isspace
 
 FTMEM_DIR	=	ft_mem/
 FTMEM		=	ft_bzero ft_calloc ft_memchr ft_memcmp ft_memmove ft_memset
