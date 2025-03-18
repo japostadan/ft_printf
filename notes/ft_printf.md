@@ -1,22 +1,24 @@
-<<<<<<< HEAD
 # ft_printf
     - Recreating the printf funcion in the C standard library. This funcion should behave similarly to the standard printf.
 
 
 ## Steps to Implement:
+
 **1. Funcionality**
     - The core functionality of the printf funtion is to process a format string and correctly format and print the arguements based on the format specifiers in the string.
 **2. Handling Variable Arguements**
     - The handling of arguements can be done using va_start, va_arg, and va_end macros.
 **3. Writing the output**
-    - The required funtion to use is the **write**.
+    - The required funtion to use is the **write()**.
 **4. The return value**
     - The return value should behave the same as the printf which retruns the total number of characters written to the output (excluding the null byte). In case of an error, it should return a negative value.
-=======
+
 # The ft_printf
 
     - Recreating the printf funcion in the C standard library. This funcion should behave similarly to the standard printf.
+
 ## Steps to Implement:
+
 **1. Functionality**
     - The core functionality of the printf function is to process a format string and correctly format and print the arguments based on the format specifiers in the string.
 **2. Handling Variable Arguments**
@@ -25,7 +27,6 @@
     - The required function to use is the **write**.
 **4. The return value**
     - The return value should behave the same as the printf which returns the total number of characters written to the output (excluding the null byte). In case of an error, it should return a negative value.
->>>>>>> fbae2d2 (Create: Add docs files)
 
 #### For ft_printf, the format string indicates how to process each argument, and the variable arguments are passed in order after the format string.
 
@@ -49,7 +50,7 @@
 5. Cleanup:
         - Finally, printf ends the variable argument list using va_end.
 
-## Plan for the ft_printf Function
+#### Plan for the ft_printf Function
 
 - We will need to implement the ft_printf function that processes the format string and uses the va_* macros to fetch the arguments.
 
@@ -62,19 +63,16 @@
     5. Return the number of characters printed: Track the total number of characters printed and return that at the end of the function.
 
 
-### The mandatory 
+#### The mandatory 
 
 - The prototype of ft_printf() is:
-<<<<<<< HEAD
 
-int ft_printf(const char *, ...);
+		`int ft_printf(const char *, ...);`
 
 - Here are the requirements:
-=======
-`int ft_printf(const char *, ...);`
+		`int ft_printf(const char *, ...);`
 
 - **Here are the requirements:**
->>>>>>> fbae2d2 (Create: Add docs files)
 
 • Don’t implement the buffer management of the original printf().
 • Your function has to handle the following conversions: cspdiuxX%
